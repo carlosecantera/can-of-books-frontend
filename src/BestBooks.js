@@ -5,6 +5,7 @@ import './BestBooks.css';
 
 class BestBooks extends React.Component {
   render() {
+    console.log('Best Books was render');
     return(
       <Jumbotron>
         <h1>My Favorite Books</h1>
