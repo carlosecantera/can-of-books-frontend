@@ -10,6 +10,7 @@ import {
   Route
 } from "react-router-dom";
 import { withAuth0 } from '@auth0/auth0-react';
+import Profile from './Profile';
 
 class App extends React.Component {
 
@@ -29,7 +30,7 @@ class App extends React.Component {
               </Route>
               <Route exact path="/profile">
                 {this.props.auth0.isAuthenticated
-                  ? <BestBooks />
+                  ? <Profile />
                   : null
                 }
               </Route>
