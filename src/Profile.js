@@ -4,6 +4,7 @@ import './BestBooks.css';
 import axios from 'axios';
 import { withAuth0 } from '@auth0/auth0-react';
 
+
 class Profile extends React.Component {
   constructor(props) {
     super(props);
@@ -19,7 +20,7 @@ class Profile extends React.Component {
           const requestUserData = {
             headers: { "Authorization": `Bearer ${jwt}` },
             method: 'get',
-            baseURL:  'http://localhost:3001', //process.env.REACT_APP_SERVER ||
+            baseURL:  'http://localhost:3002', //process.env.REACT_APP_SERVER ||
             url: '/test'
           }
           axios(requestUserData)
