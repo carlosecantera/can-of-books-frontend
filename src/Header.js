@@ -15,9 +15,9 @@ class Header extends React.Component {
         <Link to="/">Home</Link>
         <Link to="/profile">Profile</Link>
         {this.props.auth0.isAuthenticated
-                  ? <LogOutButton />
-                  : <LoginButton />
-                }
+          ? <LogOutButton />
+          : <LoginButton />
+        }
       </Navbar>
     );
   }
